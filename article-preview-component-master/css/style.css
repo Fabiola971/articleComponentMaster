@@ -11,13 +11,13 @@ body {
   font-size: 0.8125em;
 }
 
-footer,
 main {
   margin-inline: 1.875em;
 }
 
 footer .user {
   display: flex;
+  padding: 1.875em 1.875em 1.25em 1.875em;
 }
 
 footer .user img {
@@ -29,11 +29,16 @@ footer .user img {
 
 h1 {
   margin: 1em 0 0.5em 0;
+  font-size: large;
 }
 
 h1,
 h2 {
   color: hsl(217, 19%, 35%);
+}
+
+h2 {
+  font-size: small;
 }
 
 header figure img {
@@ -59,11 +64,17 @@ p {
 .containerUser .user .userShare img {
   border-radius: 50%;
   background-color: hsl(210, 46%, 95%);
-  padding: 0.625em;
+  padding: 1em;
   width: 15px;
   height: 13px;
 }
 
 .containerSocialLinkMobile {
   background-color: hsl(217, 19%, 35%);
+  border-radius: 0 0 0.625em 0.625em;
+  padding: 1.25em;
+}
+
+.socialLinkMobile {
+  display: flex;
 }
