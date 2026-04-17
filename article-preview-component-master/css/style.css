@@ -12,13 +12,17 @@ body {
 }
 
 main {
-  margin-inline: 1.875em;
+  /* margin-inline: 1.875em; */
+  margin: 0 1.875em 1.875em 1.875em;
+}
+
+footer .user {
+  padding: 0 1.875em 1.25em 1.875em;
 }
 
 footer .user,
 .socialLinkMobile {
   display: flex;
-  padding: 1.875em 1.875em 1.25em 1.875em;
 }
 
 footer .user img {
@@ -89,13 +93,7 @@ p {
 }
 
 .containerUser .user .userShare figure {
-  border-radius: 50%;
   background-color: hsl(210, 46%, 95%);
-  width: 2em;
-  height: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .containerUser .user .userShare figure img {
@@ -110,4 +108,33 @@ p {
 }
 
 .socialLinkMobile {
+  padding: 1.875em 1.875em 1.25em 1.875em;
+}
+
+.socialLinkMobile p {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.socialLinkMobile figure:first-of-type {
+  margin-left: 15%;
+}
+
+.socialLinkMobile figure:first-of-type img:nth-of-type(2) {
+  margin-inline: 10px;
+}
+
+.socialLinkMobile figure:last-of-type {
+  background-color: hsl(212, 23%, 69%);
+}
+
+.socialLinkMobile figure:last-of-type,
+.containerUser .user .userShare figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
 }
